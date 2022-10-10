@@ -33,7 +33,10 @@ class AuthController extends Controller
         $user->password = Hash::make($validated['password']);
         $user->save();
 
-        return response()->json($user, 201);
+        return response()->json([
+            'message'   => 'success',
+            'data'      => $user
+        ], 201);
     }
 
     public function login(Request $request)

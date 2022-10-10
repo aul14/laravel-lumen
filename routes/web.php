@@ -21,3 +21,11 @@ $router->group(['prefix' => 'auth'], function () use ($router) {
     $router->post('register', 'AuthController@register');
     $router->post('login', 'AuthController@login');
 });
+
+$router->group(['prefix' => 'notes', 'middleware' => 'auth'], function () use ($router) {
+    $router->get('/', 'NoteController@index');
+    $router->post('/', 'NoteController@store');
+    $router->get('/{id}', 'NoteController@show');
+    $router->put('/{id}', 'NoteController@update');
+    $router->delete('/{id}', 'NoteController@destroy');
+});
