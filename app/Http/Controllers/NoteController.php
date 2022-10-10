@@ -46,7 +46,7 @@ class NoteController extends Controller
         return response()->json([
             'message'   => 'Save, has been successfully',
             'data'      => $note
-        ]);
+        ], 201);
     }
 
     public function show(Request $request, $id)
