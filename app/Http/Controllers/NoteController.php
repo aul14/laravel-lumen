@@ -20,7 +20,10 @@ class NoteController extends Controller
 
     public function index()
     {
-        return response()->json(Auth::user()->notes);
+        return response()->json([
+            'message'   => 'All data successfully displayed!',
+            'data'      => Auth::user()->notes
+        ]);
     }
 
     public function store(Request $request)
