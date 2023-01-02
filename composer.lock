@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b7217f35f402fe38d94e26abc5e93609",
+    "content-hash": "60ddc6fc99ed6a09821928d76de306b4",
     "packages": [
         {
             "name": "brick/math",
@@ -4869,6 +4869,54 @@
             "time": "2022-09-08T09:34:40+00:00"
         },
         {
+            "name": "thedevsaddam/lumen-route-list",
+            "version": "2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thedevsaddam/lumen-route-list.git",
+                "reference": "198633b7e9c23a12290dbee80f4a4d011b855207"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thedevsaddam/lumen-route-list/zipball/198633b7e9c23a12290dbee80f4a4d011b855207",
+                "reference": "198633b7e9c23a12290dbee80f4a4d011b855207",
+                "shasum": ""
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "Thedevsaddam\\LumenRouteList\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Saddam Hossain",
+                    "email": "thedevsaddam@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Display all the registered route list like laravel",
+            "homepage": "https://github.com/thedevsaddam/lumen-route-list",
+            "keywords": [
+                "lumen",
+                "lumen routes list",
+                "lumen-route-list",
+                "route-list",
+                "routes",
+                "thedevsaddam"
+            ],
+            "support": {
+                "issues": "https://github.com/thedevsaddam/lumen-route-list/issues",
+                "source": "https://github.com/thedevsaddam/lumen-route-list/tree/master"
+            },
+            "abandoned": true,
+            "time": "2017-09-24T05:18:44+00:00"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v5.4.1",
             "source": {
@@ -7012,5 +7060,5 @@
         "php": "^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.3.0"
 }
